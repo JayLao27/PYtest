@@ -5,19 +5,18 @@ class dog:
 
     def bark(self):
         return "Woof!"
-
-    def get_info(self):
-        return f"{self.name} is {self.age} years old."
-
+    
     def birthday(self):
         self.age += 1
-        return self.age
+        return f"Happy birthday {self.name} Age: {self.age}"
+
+    def get_info(self):
+        return f"Dog name: {self.name}, Age: {self.age}"
 
 
 mahdog = dog("Yosh", 3)
 
 
-print (mahdog.birthday())
 print(mahdog.bark())
-
+print(mahdog.birthday())
 print(mahdog.get_info())
